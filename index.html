@@ -126,7 +126,7 @@
         const imageContainer = document.getElementById('imageContainer');
         const progressBar = document.getElementById('progressBar');
         const nextMilestone = document.getElementById('nextMilestone');
-        const milestones = [500, 1000, 3000, 5000, 6000];
+        const milestones = [0, 500, 1000, 3000, 5000, 6000];
         let currentMilestoneIndex = 0;
         
         // Предзагрузка изображений
@@ -139,7 +139,7 @@
         ];
 
         button.addEventListener('click', function() {
-            clickCount++;
+            clickCount+100;
             counter.textContent = `Кликов: ${clickCount}`;
             
             // Анимация кнопки
